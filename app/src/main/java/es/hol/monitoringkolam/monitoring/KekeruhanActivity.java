@@ -79,7 +79,7 @@ public class KekeruhanActivity extends AppCompatActivity {
         protected void onPostExecute (ArrayList<Kekeruhan> sensor){
             super.onPostExecute(sensor);
             NTUset.setLayoutManager(new LinearLayoutManager(KekeruhanActivity.this));
-            adapter.setListkekeruhan(sensor);
+            adapter.setListKekeruhan(sensor);
             NTUset.setAdapter(adapter);
         }
     }

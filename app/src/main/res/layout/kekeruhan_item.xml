@@ -1,33 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <RelativeLayout
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hasilNTU"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_marginTop="55dp"-->
+            <!--android:layout_marginBottom="25dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="30"-->
+            <!--android:textSize="45dp" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/NTU"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="70dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="55dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="25dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_toRightOf="@id/hasilNTU"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="NTU"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="45dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_toEndOf="@id/hasilNTU" />&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/status"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_below="@+id/hasilNTU"-->
+            <!--android:layout_marginLeft="65dp"-->
+            <!--android:layout_marginTop="55dp"-->
+            <!--android:layout_marginBottom="25dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Status"-->
+            <!--android:textSize="45dp" />-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/hasilNTU"
-            android:layout_width="250dp"
-            android:layout_height="70dp"
-            android:gravity="center"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="55dp"
-            android:layout_marginBottom="25dp"
-            android:textSize="45dp"
-            android:text="NTU"/>
 
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginRight="8dp"
+                android:id="@+id/hasilNTU"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="25dp"
+                android:text="30"
+                android:textSize="45dp"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/NTU"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="25dp"
+                android:text="NTU"
+                android:textSize="45dp" />
+        </LinearLayout>
         <TextView
             android:id="@+id/status"
-            android:layout_below="@+id/hasilNTU"
             android:layout_width="250dp"
             android:layout_height="70dp"
-            android:gravity="center"
+            android:layout_below="@+id/hasilNTU"
             android:layout_marginLeft="65dp"
             android:layout_marginTop="55dp"
             android:layout_marginBottom="25dp"
-            android:textSize="45dp"
-            android:text="Status"/>
-    </RelativeLayout>
+            android:gravity="center"
+            android:text="Status"
+            android:textSize="45dp" />
+    </LinearLayout>
 
-</RelativeLayout>
+</android.support.v7.widget.CardView>
